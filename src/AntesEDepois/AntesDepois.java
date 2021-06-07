@@ -1,19 +1,27 @@
 package AntesEDepois;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 public class AntesDepois {
 
-    @Before
+    @Before// uma vez antes de cada teste
     public void before(){
         System.out.println("@Before");
     }
 
-    @After
+    @After// uma vez depois de cada teste
     public void after(){
         System.out.println("@after");
+    }
+
+    @BeforeClass// antes de todos os testes
+    public static void beforeClass(){
+        System.out.println("@beforeClass");
+    }
+
+    @AfterClass// depois de todos os testes
+    public static void afterClass(){
+        System.out.println("@afterClass");
     }
 
     @Test
