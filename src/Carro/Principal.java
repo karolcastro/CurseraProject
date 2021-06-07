@@ -1,16 +1,14 @@
 package Carro;
 
-import Carro.Carros;
-
 public class Principal {
 
   public static void  main(String[] args) {
-    Carros c1 = new Carros();
+    Carro c1 = new Carro();
     c1.potencia = 10;
     c1.nome = "Corcel";
     c1.velocidade = 0;
 
-    Carros c2 = new Carros();
+    Carro c2 = new Carro();
     c2.potencia = 15;
     c2.nome = "Carango";
     c2.velocidade = 0;

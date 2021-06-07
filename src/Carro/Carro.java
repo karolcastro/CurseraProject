@@ -1,20 +1,20 @@
 package Carro;
 
-public class Carros {
+public class Carro {
 
-  int potencia;
-  int velocidade;
+  public int potencia;
+  public int velocidade;
   String nome;
 
-  void acelerar(){
+  public void acelerar(){
     velocidade += potencia;
   }
 
-  void frear(){
+  public void frear(){
     velocidade = velocidade/2;
   }
 
-  int getVelocidade(){
+  public int getVelocidade(){
     return velocidade;
   }
 
